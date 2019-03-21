@@ -1,5 +1,5 @@
 Welcome to mypython GitHub repository. 
 
-Here you will find source codes of data science.
+You will be able to find some python data science program in this repository. 
 
-Enjou it.
+Enjoy it.
