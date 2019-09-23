@@ -1,5 +1,4 @@
-Welcome to mypython GitHub repository. 
+Python Project:
 
-You will be able to find some python data science program in this repository. 
+Author: Terry Sun
 
-vv
