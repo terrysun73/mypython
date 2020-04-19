@@ -18,7 +18,7 @@ def calculateStock(stocks, rate):
         stockAmount = stock[index+1:]
 
         ticker = yf.Ticker(stockSymbal)
-        print(ticker.info)
+        # print(ticker.info)
 
         currency = ticker.info["currency"]
 
