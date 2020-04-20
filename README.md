@@ -7,7 +7,7 @@ Date: 2019-09-23
 
 FROM alpine/git as clone
 WORKDIR /app
-RUN git clone https://terrysun73:Su20181001@github.com/terrysun73/mypython.git
+RUN git clone 
 
 FROM python:3.7 as build
 WORKDIR /usr/src/app
