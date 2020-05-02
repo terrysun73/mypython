@@ -19,7 +19,7 @@ def calculateStock(stocks, rate):
 
         ticker = yf.Ticker(stockSymbal)
 
-        currency = ticker.info["financialCurrency"]
+        currency = ticker.info["currency"]
 
         if currency == 'USD':
             total = total + \
