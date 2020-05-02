@@ -18,9 +18,8 @@ def calculateStock(stocks, rate):
         stockAmount = stock[index+1:]
 
         ticker = yf.Ticker(stockSymbal)
-        # print(ticker.info)
 
-        currency = ticker.info["currency"]
+        currency = ticker.info["financialCurrency"]
 
         if currency == 'USD':
             total = total + \
@@ -62,7 +61,7 @@ def getUSDRate():
 
 
 terryTF = ['TCEHY:10', 'AAPL:30', 'AMZN:3', 'MSFT:100', 'V:100', 'COST:45']
-cathyTF = []
+cathyTF = ['AMZN:1', 'COST:30', 'MSFT:40']
 terrymarginstocks = ['WMT:40']
 
 
@@ -73,7 +72,7 @@ terryTFCashCAD = 839.62
 terryTFCashUSD = 2711.25
 
 cathyTFCashCAD = 262.61
-cathyTFCashUDS = 46750.09
+cathyTFCashUDS = 27861.27
 
 rate = getUSDRate()
 print(rate)
