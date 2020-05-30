@@ -60,16 +60,16 @@ def getUSDRate():
     return rate
 
 
-terryTF = ['TCEHY:10', 'AAPL:30', 'AMZN:3', 'MSFT:100', 'V:100', 'COST:45']
+terryTF = ['AAPL:30', 'AMZN:4', 'MSFT:100', 'V:100', 'COST:45','WMT:28']
 cathyTF = ['AMZN:1', 'COST:30', 'MSFT:40']
-terrymarginstocks = ['WMT:40']
+terrymarginstocks = ['WMT:12']
 
 
 marginCashCAD = 306.7
 marginCashUSD = 437.67
 
 terryTFCashCAD = 839.62
-terryTFCashUSD = 2711.25
+terryTFCashUSD = 881.15
 
 cathyTFCashCAD = 262.61
 cathyTFCashUDS = 27861.27
@@ -95,17 +95,17 @@ cathyTFTotal = calculateStock(cathyTF, rate) + \
 print(cathyTFTotal)
 
 
-terryRRSP = ['COST:5', 'GOOG:8', 'MA:13', 'TCEHY:11']
+terryRRSP = ['COST:5', 'GOOG:8', 'MA:13']
 terryRRSPCashCAD = 1970.83
-terryRRSPCashUSD = 19.23
+terryRRSPCashUSD = 597.62
 
 terryRRSPTotal = calculateStock(
     terryRRSP, rate) + terryRRSPCashCAD + terryRRSPCashUSD / float(rate)
 print("terryRRSP -------------")
 print(terryRRSPTotal)
 
-terryRESP = ['AMZN:7', 'GOOG:1', 'HD:4', 'MA:3', 'TCEHY:37', 'MSFT:9']
-terryRESPCashCAD = 2177.77
+terryRESP = ['AMZN:8', 'GOOG:1', 'HD:4', 'MA:3', 'MSFT:9']
+terryRESPCashCAD = 1587.76
 terryRESPCashUSD = 0
 
 terryRESPTotal = calculateStock(
@@ -125,7 +125,7 @@ print(cathyRRSPTotal)
 
 cathySRRSP = ['AMZN:2', 'BABA:8', 'COST:50',
               'GOOG:2', 'MSFT:41', 'SHOP:2', 'V:45']
-cathySRRSPCashCAD = 2147.22
+cathySRRSPCashCAD = 2173.99
 cathySRRSPCashUSD = 0
 
 cathySRRSPTotal = calculateStock(
